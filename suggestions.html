@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>suggestions</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="suggestions.css">
+</head>
+<body>
+	<p><h1><center>Bienvenue dans ma Boîte à Suggestion</center></h1></p>
+	<form method="POST" action="suggestions.php">
+		<fieldset>
+			<legend>
+				<h2>Formulaire de suggestions</h2>
+			</legend>
+				<p>Vous pouvez laisser quelques suggestions en vue d'améliorer ultérieurement ma personnalité.</p>
+				<br/>
+				<p>Donc si vous avez une remarque au sujet de personnalité vous pouvez me le faire savoir et m'aider à me corriger à travers ce léger formulaire:</p>
+				<br/>
+				<fieldset>
+				<legend class="p1">Informations anonymes</legend>
+				<p>
+				<label for="pseudo" class="p1">Entrez votre pseudo :</label>
+				<input type="text" name="pseudo" id="pseudo"/>
+				<br/>
+				<input type="radio" name="sexe" id="sexe"/>
+				<label for="homme" class="p1">Masculin</label>
+				<input type="radio" name="sexe" id="sexe"/>
+				<label for="femme" class="p1">Féminin</label>
+				</p>
+				</fieldset>
+	<br/>
+		<fieldset>
+		<legend class="p1">Suggestions</legend>
+		<p>
+			<label for="suggestions" class="p1">Veuillez laisser vos suggestions ici,je vous remercie!</label>
+			<textarea name="suggestions" id="suggestions" rows="10" cols="100"></textarea>
+		</p>
+		</fieldset>
+		</fieldset>
+		<p>
+			<input type="submit" value="Envoyer" class="envoyer_annuler" />
+			<input type="reset" value="Annuler" class="envoyer_annuler" />
+		</p>
+
+</body>
+</html>

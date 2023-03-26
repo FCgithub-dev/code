@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>commentaires</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="commentaires.css">
+</head>
+<body>
+	<form method="POST" action="commentaires.php">
+	<h1 class="titre"><center>Bienvenue dans mon espace commentaire</center></h1>
+	<br/>
+	<p>Ici vous pouvez laisser des commentaires sur ma page Web et donner vos appréciations en tout point de vue car je suis ouvert à toutes propositions:</p>
+		<fieldset>
+			<legend><p class="p1">Commentaires</p></legend>
+			<p>
+				<label for="pseudo" class="p1">Entrez votre pseudo :</label>
+				<input type="text" name="pseudo" id="pseudo"/>
+				<br/>
+				<label class="p1">Sélectionner votre genre<br/></label>
+				<select name="genre" id="pays">
+					<optgroup label="Genre">
+						<option value="Masculin">Masculin</option>
+						<option value="Feminin">Féminin</option>
+					</optgroup>
+				</select>
+			</p>
+			<p>
+				<label for="commentaires" class="p1">Veuillez laisser vos commentaires ici,merci:</label>
+				<br/>
+				<textarea name="commentaires"></textarea>
+			</p>
+		</fieldset>
+		<p>
+			<input type="submit" value="Envoyer" class="envoyer_annuler" />
+			<input type="reset" value="Annuler" class="envoyer_annuler" />
+		</p>
+</body>
+</html>
